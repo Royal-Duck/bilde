@@ -14,3 +14,6 @@ Bilde is a project management tool that keeps track of what files you added to t
 
 ## paramiters
 all the settings are aviable at the top of the file and the names are explicites
+
+## comman line support
+if you want to have a command line tool, coppy Bilde or Bilde.exe to your PATH environement variable (Bild for Linux and Bilde.exe for Windows)
