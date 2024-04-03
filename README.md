@@ -1,7 +1,7 @@
-# bilde
+# bylde
 You know Cmake? stop using it ...
 
-Bilde is a project management tool that keeps track of what files you added to the project and supports libraries with a simple command line usage (no make file, no IDE needet to understand, everything is simple and clear).
+Bylde is a project management tool that keeps track of what files you added to the project and supports libraries with a simple command line usage (no make file, no IDE needet to understand, everything is simple and clear).
 
 ## commands
 `run` compiles the files modified since last time and link every intermediate files and lauches the executable file.
@@ -16,4 +16,4 @@ Bilde is a project management tool that keeps track of what files you added to t
 all the settings are aviable at the top of the file and the names are explicites
 
 ## comman line support
-if you want to have a command line tool, coppy Bilde or Bilde.exe to your PATH environement variable (Bild for Linux and Bilde.exe for Windows)
+if you want to have a command line tool, coppy Bylde or Bylde.exe to your PATH environement variable (Bild for Linux and Bylde.exe for Windows)
