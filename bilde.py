@@ -7,9 +7,9 @@ bin_dir : str = "bin/"
 intermediate_dir : str = "intermediate/"
 
 main_file : str = "main.cpp"
-executable_file = "main"
+executable_file : str = "main"
 
-tracking_file = "tracking_builds.bin"
+tracking_file : str = "tracking_builds.bin"
 ############################
 
 arguments : list[str] = sys.argv
@@ -21,7 +21,7 @@ class File:
         self.extension : str = extension
     def check_compile(self, libs) -> bool:
         current_time_edit : int = os.path.getmtime(src_dir + self.name + "." + self.extension)
-        if self.last_time_edit != current_time_edit:
+        if self.last_time_edit != current_time_edit or not os.path.exists(intermediate_dir+self.name+".o"):
             self.last_time_edit = current_time_edit
             os.system(f"g++ {src_dir + self.name}.{self.extension} -o {intermediate_dir + self.name}.o -c {libs} -I{lib_dir}")
             return True
